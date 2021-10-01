@@ -207,8 +207,6 @@ section{
 }
 .project-info img{
     width: 100%;
-    border-radius: 1em;
-    border:1px solid var(--light-purple);
 }
 .project-info span{
     font-size:var(--fs-h4);
@@ -228,13 +226,22 @@ section{
     font-size: var(--fs-h4);
     color:var(--dark-grey);
 }
-
-button{
+.skills-icon{
+    width:var(--fs-body);
+}
+.download-cv{
+    max-width:fit-content;
     background-color: var(--dark-blue);
-    font-size: var(--fs-h4);
+    font-size: var(--fs-body);
     color: var(--offwhite);
     padding:1em 2em;
     border:none;
+    margin:0.5em;
+}
+.download{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer{
@@ -272,18 +279,4 @@ footer img{
     text-align: center;
 }
 
-@media screen and (min-width:800px){
-    
-    .nav-bar{
-        position:fixed;
-        height:100vh;
-    }
-    #hamburger{
-        display:none;
-    }
-    .options-container a {
-        writing-mode: vertical-lr;
-    }
-
-}
 
