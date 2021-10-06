@@ -60,7 +60,9 @@ body{
 }
 
 ul{
-    list-style: none;   
+    list-style: none;  
+    padding:0; 
+    margin: 0;
 }
 
 a{
@@ -90,11 +92,10 @@ img{
 
 .hamburger{
     box-sizing: content-box;
-    width:15px;
-    padding:10px;
     border: none;
-    border-radius: 50%;
-    color:var(--dark-blue);
+    font-size: var(--fs-h3);
+    background-color: var(--dark-blue);
+    color:var(--offwhite);
 }
 .hamburger .close-icon{
     display:none;
@@ -109,6 +110,7 @@ img{
     background-color: rgba(167, 218, 220,0.85);
     width:100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding:1em;
     position:fixed;
@@ -122,7 +124,8 @@ img{
 
 .showMenu {
     transform: translateY(0);
-  }
+}
+
 .options-container{
     display:flex;
     flex-direction: column;
@@ -188,7 +191,11 @@ section{
 }
 
 .subtitle{
+    display: inline-block;
+    padding: 0 1em;
     text-transform: uppercase;
+    border:1px solid var(--red);
+    border-radius: 0.5em;
     font-weight: var(--fw-bold);
     color:var(--red);
     letter-spacing: 0.4em;
@@ -200,7 +207,7 @@ section{
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
     display: block;
-    margin-top: -0.6em;
+    
 }
 
 .featured-desc{
@@ -264,6 +271,28 @@ section{
 
 .skills-icon{
     width:var(--fs-body);
+}
+
+.information{
+    display:flex;
+    flex-direction: column;
+}
+.sub-heading{
+    font-size: var(--fs-h3);
+    margin:0.5em;
+    margin-bottom:0;
+}
+.info-heading{
+    font-size: var(--fs-h2);
+    margin:0.5em;
+    margin-bottom: 0;
+}
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1em;
+    margin: 1em 4em;
 }
 
 .download-cv{
