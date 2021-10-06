@@ -20,10 +20,10 @@
     --light-grey: #e8e9e8;
     --offwhite: #f1faee;
 
-    --fs-h1: 2rem;
-    --fs-h2: 1.5rem;
-    --fs-h3: 1.25rem;
-    --fs-h4: 0.85rem;
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.25rem;
+    --fs-h3: 1rem;
+    --fs-h4: 0.75rem;
     --fs-body: 0.6rem;
 
 }
@@ -55,14 +55,15 @@ img{
     width:100%;
 }
 
-
 .nav-container{
     background-color: var(--dark-blue);
+    position:relative;
+}
+.top-nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
-    position:relative;
 }
 
 #website-logo img{
@@ -190,7 +191,6 @@ section{
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
     display: block;
-    
 }
 
 .featured-desc{
@@ -207,34 +207,21 @@ section{
     align-items: center;
 }
 .section-heading{
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
 }
 
 .project-container{
     display:flex;
-}
-
-.project{
-    width:200px;
-    height:300px;
-    border:2px solid var(--dark-blue);
-    border-radius:1em;
-}
-
-.project-info{
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:2em;
+    margin:1em 4em;
     position: relative;
 }
 
-.project-info img{
-    width: 100%;
-}
-
-.project-info span{
-    font-size:var(--fs-h4);
-    font-weight: var(--fw-reg);
-    color:var(--dark-grey);
-    position: static;
+.project{
+    min-width:30%;
+    width:250px;
 }
 
 .about-me{
@@ -248,7 +235,7 @@ section{
 }
 
 .about-me-text{
-    font-size: var(--fs-h4);
+    font-size: var(--fs-body);
     color:var(--dark-grey);
 }
 
@@ -260,6 +247,7 @@ section{
     display:flex;
     flex-direction: column;
 }
+
 .info-heading{
     font-size: var(--fs-h2);
     margin:0.5em;
@@ -267,13 +255,13 @@ section{
 }
 
 .sub-heading{
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h4);
     margin:0.5em;
     line-height: 1.1em;
 }
 
 li{
-    font-size: var(--fs-h4);
+    font-size: var(--fs-body);
     color:var(--dark-grey);
 }
 
@@ -281,7 +269,7 @@ li{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:1em;
+    gap:2em;
     margin: 0 4em;
 }
 
