@@ -1,4 +1,21 @@
-@media screen and (min-width:768px){
+@media screen and (min-width:768px)and (max-width:1023px){
+    :root{
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1.125rem;
+        --fs-h4: 0.9rem;
+        --fs-body: 0.75rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    :root{
+        --fs-h1:    3rem;
+        --fs-h2:    2.25rem;
+        --fs-h3:    1.75rem;
+        --fs-h4:    1.125rem;
+        --fs-body:  1rem;
+    }
     .nav-bar{
         position:fixed;
         height:100vh;
@@ -11,6 +28,9 @@
     }
     .download-cv:hover{
         background-color:var(--dark-grey);
+    }
+    .download-cv:active{
+        background-color:var(--red);
     }
     
 }
