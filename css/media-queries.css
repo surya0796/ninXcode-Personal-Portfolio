@@ -29,11 +29,14 @@
         display:grid;
         grid-template-columns: 66% auto;
         position: relative;
+        background-color:unset;
     }
     .hero-design{
         width:40%;
         position: absolute;
-        left:46%;
+        left: 66%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     .hero .content{
         text-align:unset;

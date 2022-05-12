@@ -121,6 +121,11 @@ img{
     color:black;
     font-weight: var(--fw-med);
 }
+.hero{
+    display: flex;
+    min-height: 95vh;
+    background-color: var(--light-blue);
+}
 
 .hero .content{
     background-color: var(--light-blue);
@@ -129,7 +134,7 @@ img{
     align-items: stretch;
     text-align: center;
     padding:3em;
-    align-content: space-between;
+    position: relative;
 }
 
 .hero .content h1{
@@ -141,6 +146,9 @@ img{
 .scroll-action-img{
     margin: 0 auto;
     width:20px;  
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
 }
 
 .meet{
@@ -154,12 +162,21 @@ img{
 }
 
 section{
-    padding:3em 2em 0 2em;
+    padding:3em 2em 0 00;
+    margin-left: 2em;
     text-align: center;
+}
+.left{
+    max-width: 600px;
+}
+
+.tilt-img-container{
+    display: inline-block;
 }
 
 .featured{
     position: relative;
+    display: flex;
 }
 
 .featured::before{
@@ -209,7 +226,10 @@ section{
 .section-heading{
     font-size: var(--fs-h2);
 }
+.right-transition2{
+    max-width: 500px;
 
+}
 .project-container{
     display:flex;
     flex-wrap: wrap;
