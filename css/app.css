@@ -99,6 +99,7 @@ img{
     padding:1em;
     position:fixed;
     top:60px;
+    z-index: 100;
     left: 0;
     right: 0;
     bottom: 0;
